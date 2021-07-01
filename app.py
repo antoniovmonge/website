@@ -100,8 +100,7 @@ app.layout = dbc.Container([
             [
                 html.Br(),
                 html.Br(),
-                html.Img(
-                    src=app.get_asset_url('antonio_logo_website_250.png')),
+                html.Img(src=app.get_asset_url('antonio_logo_clean_250.svg')),
 
                 # width={
                 #     "size": 6,
@@ -177,17 +176,17 @@ app.layout = dbc.Container([
         dbc.Card(
             [
                 dbc.CardBody([
-                    dbc.CardImg(src="assets/Psycovid_project_logo_4.png",
+                    dbc.CardImg(src="assets/antonio_logo_SVG_3.svg",
                                 top=True),
                     html.H4("PsyCovid DS", className="card-title"),
                     html.H6("Data Analysis + Machine Learning",
                             className="card-subtitle"),
-                    html.
-                    P("Analisis and Predictions over the Human Emotions based on\
-                personality traits and demographical variables.",
-                      className="card-text"),
+                    html.P(
+                        "Some quick example text to build on the card title and make "
+                        "up the bulk of the card's content.",
+                        className="card-text"),
                     dbc.Button("Go to App",
-                               href="https://psycovid-dash.herokuapp.com/",
+                               href="https://google.com",
                                color="primary",
                                block=True),
                     # dbc.CardLink("External link", href="https://google.com"),
