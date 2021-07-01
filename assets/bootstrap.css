@@ -1,24 +1,3 @@
-/* .container {
-    align-items: center;
-} */
-
-/* .card {
-    margin-bottom: 50px;
-    margin-bottom: 24px;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
-    border-radius: 25px;
-
-}
-
-.card-title {
-    margin-top: 15px;
-}
-
-.card-subtitle {
-    padding-top: 15px;
-    padding-bottom: 15px;
-} */
-
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -557,7 +536,6 @@ pre code {
 }
 
 .container {
-  align-items: center;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -4593,11 +4571,6 @@ input[type="button"].btn-block {
 }
 
 .card {
-  margin: 45px;
-  margin-bottom: 50px;
-  margin-bottom: 24px;
-  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.18);
-  border-radius: 25px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -4608,7 +4581,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 1rem;
+  border-radius: 0.25rem;
 }
 
 .card > hr {
@@ -4637,8 +4610,8 @@ input[type="button"].btn-block {
 }
 
 .card-subtitle {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: -0.375rem;
+  margin-bottom: 0;
 }
 
 .card-text:last-child {
