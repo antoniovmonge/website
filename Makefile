@@ -59,3 +59,20 @@ pypi_test:
 
 pypi:
 	@twine upload dist/* -u $(PYPI_USERNAME)
+
+
+# ----------------------------------
+#      HEROKU COMMANDS
+# ----------------------------------
+
+heroku_login:
+	-@heroku login
+
+heroku_create_app:
+	-@heroku create ${APP_NAME}
+
+# heroku create YOUR_APP_NAME --region eu
+
+deploy_heroku:
+	-@git push heroku master
+	-@heroku ps:scale web=1
