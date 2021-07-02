@@ -16,7 +16,6 @@ server = app.server
 
 app.layout = dbc.Container([
     html.Br(),
-    html.Br(),
     dbc.Row([
         dbc.Col([
             dbc.Button('LinkedIn',
@@ -30,6 +29,7 @@ app.layout = dbc.Container([
         ],
                 style=dict(textAlign='right'))
     ]),
+    html.Br(),
     dbc.Row(
         dbc.Col(
             [
@@ -40,7 +40,7 @@ app.layout = dbc.Container([
             style=dict(textAlign='center'),
         )),
     # html.Br(),
-    html.Br(),
+    # html.Br(),
     dbc.Row([
         dbc.Card(  # CARD 1
             [
