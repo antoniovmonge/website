@@ -116,26 +116,26 @@ app.layout = dbc.Container([
             ],
             style={"width": "18rem"},
         ),
-        dbc.Card(
+        dbc.Card( # Card 3 - Avocados
             [
                 dbc.CardBody([
-                    dbc.CardImg(src="assets/antonio_green.svg", top=True),
+                    dbc.CardImg(src="assets/avocado_analytics.svg", top=True),
                     html.Br(),
+                    # html.Br(),
+                    html.H4("Avocado Analytics", className="card-title"),
+                    html.H6("Data Analysis", className="card-subtitle"),
                     html.Br(),
-                    html.H4("Comming soon", className="card-title"),
-                    html.H6("Card subtitle", className="card-subtitle"),
-                    html.Br(),
-                    html.P("More projects are coming soon!  :)",
+                    html.P("Analyze the behavior of avocado prices and the number of avocados sold in the US between 2015 and 2018.",
                            className="card-text"),
                     html.Br(),
-                    html.Br(),
-                    html.Br(),
-                    html.Br(),
+                    # html.Br(),
+                    # html.Br(),
+                    # html.Br(),
                     dbc.Row([
                         dbc.Col([
                             dbc.Button(
                                 "App",
-                                href="#",
+                                href="https://avocadoprices.herokuapp.com/",
                                 color="primary",
                                 # style=dict(margin=15),
                                 block=True),
@@ -143,7 +143,7 @@ app.layout = dbc.Container([
                         dbc.Col([
                             dbc.Button(
                                 "Repo",
-                                href="#",
+                                href="https://github.com/antoniovmonge/avocado_analytics",
                                 color="primary",
                                 # style=dict(margin=15),
                                 block=True,
