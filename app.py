@@ -16,19 +16,19 @@ server = app.server
 
 app.layout = dbc.Container([
     html.Br(),
-    dbc.Row([
-        dbc.Col([
-            dbc.Button('LinkedIn',
-                       href='https://www.linkedin.com/in/antonio-v-monge/',
-                       color='light'),
-        ], ),
-        dbc.Col([
-            dbc.Button('GitHub',
-                       href='https://github.com/antoniovmonge',
-                       color='light')
-        ],
-                style=dict(textAlign='right'))
-    ]),
+    # dbc.Row([
+    #     dbc.Col([
+    #         dbc.Button('LinkedIn',
+    #                    href='https://www.linkedin.com/in/antonio-v-monge/',
+    #                    color='light'),
+    #     ], ),
+    #     dbc.Col([
+    #         dbc.Button('GitHub',
+    #                    href='https://github.com/antoniovmonge',
+    #                    color='light')
+    #     ],
+    #             style=dict(textAlign='right'))
+    # ]),
     html.Br(),
     dbc.Row(
         dbc.Col(
@@ -39,6 +39,15 @@ app.layout = dbc.Container([
             ],
             style=dict(textAlign='center'),
         )),
+    html.Br(),
+    dbc.Row([
+        dbc.Col([
+            dbc.Button('GitHub',
+                       href='https://github.com/antoniovmonge',
+                       color='light')
+        ],
+                style=dict(textAlign='center'))
+    ]),
     # html.Br(),
     # html.Br(),
     dbc.Row([
@@ -49,10 +58,11 @@ app.layout = dbc.Container([
                     html.H4("PsyCovid DS", className="card-title"),
                     html.H6("Data Analysis + Machine Learning",
                             className="card-subtitle"),
-                    html.
-                    P("Analysis and Predictions over the Human Emotions based\
+                    html.P(
+                        "Analysis and Predictions over Human Emotions based\
                         on personality traits and demographic variables.",
-                      className="card-text"),
+                        className="card-text"
+                    ),
                     html.Br(),
                     dbc.Row([
                         dbc.Col([
@@ -81,16 +91,16 @@ app.layout = dbc.Container([
         dbc.Card(  # CARD 2
             [
                 dbc.CardBody([
-                    dbc.CardImg(src="assets/Financial_analysis.svg", top=True),
-                    html.H4("Financial Analysis", className="card-title"),
-                    html.H6("Data Analysis", className="card-subtitle"),
+                    dbc.CardImg(src="assets/e-commerce-analysis.svg", top=True),
+                    html.H4("e-commerce Analysis", className="card-title"),
+                    html.H6("Analytics & Dashboarding", className="card-subtitle"),
                     html.Br(),
-                    html.P("Project under construction... 😇",
+                    html.P("Decision-making: optimize performance and reduce loss through Data Visualization and Performance Analysis.",
                            className="card-text"),
                     html.Br(),
-                    html.Br(),
-                    html.Br(),
-                    html.Br(),
+                    # html.Br(),
+                    # html.Br(),
+                    # html.Br(),
                     dbc.Row([
                         dbc.Col([
                             dbc.Button(
